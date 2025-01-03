@@ -41,7 +41,7 @@ const FormValidation = () => {
           Event einsenden
         </h1>
         <p className="text-xl leading-custom-lg max-w-[768px] mx-auto text-center text-gray font-light pb-5 max-sm:text-base">
-          At vero eos et accusam et justo duo dolores et ea rebum.
+          At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
         </p>
         <div className="max-w-[768px] mx-auto">
           <form onSubmit={handleSubmit}>
@@ -56,6 +56,7 @@ const FormValidation = () => {
             <input id="imageInput" type="file" accept="image/*" style={{ display: "none" }} onChange={handleImageChange} multiple />
             <div className="flex p-4 rounded-[30px] border-lightgray border bg-white mb-5 relative">
               <input className="w-full outline-none text-sm font-bold" type="text" name="category" placeholder="Kategorie" value={formData.category} onChange={handleChange} />
+           <img src="./assets/images/svg/kategorie.svg" alt="icon" />
             </div>
             <div className="flex gap-5 mb-5">
               <input className="py-[17.5px] pl-4 max-sm:py-3 rounded-[30px] border-lightgray border outline-none text-sm font-bold w-[50%]" type="text" name="title" placeholder="Titel" value={formData.title} onChange={handleChange} />
