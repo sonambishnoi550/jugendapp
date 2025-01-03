@@ -38,9 +38,9 @@ const FormValidation = () => {
     setIsDropdownOpen(false);
   };
   return (
-    <div className="bg-offwhite py-[60px]">
+    <div className="bg-offwhite py-[60px] max-sm:py-10">
       <div className="container">
-        <h1 className="font-bold text-4xl leading-custom-md text-naturalblack text-center pb-5">
+        <h1 className="font-bold text-4xl max-sm:text-3xl leading-custom-md text-naturalblack text-center pb-5">
           Event einsenden</h1>
         <p className="text-xl leading-custom-lg max-w-[768px] mx-auto text-center text-gray font-light pb-5 max-sm:text-base">
           At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
@@ -82,7 +82,7 @@ const FormValidation = () => {
             <textarea
               className="w-full py-[55.5px] max-sm:pt-10 max-sm:pb-5 mb-5 leading-6 text-sm font-bold resize-none outline-none pl-4 rounded-[30px] border-lightgray border text-gray"
               placeholder="Details zur Veranstaltung" name="details" value={formData.details} onChange={handleChange} ></textarea>
-            <button className="py-4 px-[115px] max-sm:px-0 max-sm:w-full text-center rounded-[30px] mx-auto bg-custom-gradient sm:flex font-bold text-white">
+            <button className="py-4 px-[115px] max-sm:px-0 max-sm:w-full text-center hover:scale-110 transition-all duration-700 rounded-[30px] mx-auto bg-custom-gradient sm:flex font-bold text-white">
               Event einsenden </button>
           </form>
         </div>
