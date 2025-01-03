@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const FormValidation = () => {
+const Event = () => {
   const [formData, setFormData] = useState({
     category: "",
     title: "",
@@ -90,4 +90,4 @@ const FormValidation = () => {
     </div>
   );
 };
-export default FormValidation;
+export default Event;

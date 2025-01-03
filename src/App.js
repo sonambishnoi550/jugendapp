@@ -1,11 +1,11 @@
 import React from 'react'
-import FormValidation from './components/FormValidation'
+import Event from './components/Event'
 import Table from './components/Table'
 import Stars from './components/Stars'
 import Number from './components/Number'
 const App = () => {
   return (
-    <div><FormValidation />   
+    <div><Event />   
       <Stars/>
       <Table />
       <Number/>
