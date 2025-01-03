@@ -1,12 +1,12 @@
 import React from 'react'
 import FormValidation from './components/FormValidation'
 import Table from './components/Table'
-import Star from './components/Star'
+import Stars from './components/Stars'
 import Number from './components/Number'
 const App = () => {
   return (
     <div><FormValidation />   
-      <Star/>
+      <Stars/>
       <Table />
       <Number/>
     </div>

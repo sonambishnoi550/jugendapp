@@ -1,8 +1,6 @@
 import React, { useState, useEffect } from 'react';
-
 const Number = () => {
     const [Multiply, setMultiply] = useState(0);
-
     useEffect(() => {
         function MultiplyNumbers(num1, num2) {
             return num1 * num2;
@@ -10,7 +8,6 @@ const Number = () => {
         let result = MultiplyNumbers(5, 15);
         setMultiply(result);
     }, []);
-
     return (
         <div className='py-10'>
             <h2 className="text-4xl max-sm:text-lg font-bold pb-4 text-center">Multiply Two Numbers with Function</h2>
@@ -18,5 +15,4 @@ const Number = () => {
         </div>
     );
 };
-
 export default Number;

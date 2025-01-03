@@ -1,8 +1,6 @@
 import React, { useState, useEffect } from 'react';
-
-const Star = () => {
+const Stars = () => {
     const [name, setName] = useState([]);
-
     useEffect(() => {
         const rows = 4;
         const cols = 5;
@@ -14,10 +12,8 @@ const Star = () => {
             }
             result.push(row.trim());
         }
-
         setName(result);
     }, []);
-
     return (
         <div className='py-10'>
             <h2 className="text-4xl font-bold pb-4 text-center max-sm:text-lg">Star with nested loop</h2>
@@ -29,5 +25,4 @@ const Star = () => {
         </div>
     );
 };
-
-export default Star;
+export default Stars;

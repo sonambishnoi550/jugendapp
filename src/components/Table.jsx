@@ -1,5 +1,4 @@
 import React from "react";
-
 const Table = () => {
     const table = 2;
     let result = [];
@@ -7,7 +6,6 @@ const Table = () => {
     for (let i = 1; i <= 10; i++) {
         result.push(`${table} × ${i} = ${table * i}`);
     }
-
     return (
         <div className="p-6">
             <h2 className="text-4xl font-bold pb-4 text-center max-sm:text-lg">For Loop</h2>
@@ -19,5 +17,4 @@ const Table = () => {
         </div>
     );
 };
-
 export default Table;
