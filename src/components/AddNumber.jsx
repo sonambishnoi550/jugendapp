@@ -10,7 +10,7 @@ const AddNumber = () => {
     }, []);
     return (
         <div className='py-10'>
-            <h2 className="text-4xl max-sm:text-lg font-bold pb-4 text-center">Multiply Two Numbers with Function</h2>
+            <h2 className="text-4xl max-sm:text-lg font-bold pb-4 text-center">Add Two Numbers with Function</h2>
             <p id="result" className='text-center font-medium text-3xl max-sm:text-base'> Total : {Sum}</p>
         </div>
     );
