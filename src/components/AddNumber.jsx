@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-const Number = () => {
+const AddNumber = () => {
     const [Sum, setSum] = useState(0);
     useEffect(() => {
         function addNumbers(num1, num2) {
@@ -15,4 +15,4 @@ const Number = () => {
         </div>
     );
 };
-export default Number;
+export default AddNumber;

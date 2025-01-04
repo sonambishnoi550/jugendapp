@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const Event = () => {
+const Events = () => {
   const [formData, setFormData] = useState({
     category: "",
     title: "",
@@ -59,7 +59,7 @@ const Event = () => {
               <button type="button" onClick={handleDropdownToggle} className="relative z-10">
                 <img src="./assets/images/svg/kategorie.svg" alt="icon" /></button>
               {isDropdownOpen && (
-                <div className="absolute bg-white border border-gray-300 rounded-[10px] mt-2 w-[150px] z-10 right-[4%] top-[4%]">
+                <div className="absolute bg-white border border-gray-300 rounded-[10px] mt-2 w-full z-10 right-0">
                   <ul>
                     <li className="p-2 cursor-pointer text-sm font-bold text-gray" onClick={() => handleOptionSelect('Food')}> Food </li>
                     <li className="p-2 cursor-pointer text-sm font-bold text-gray" onClick={() => handleOptionSelect('Travel')} > Travel </li>
@@ -90,4 +90,4 @@ const Event = () => {
     </div>
   );
 };
-export default Event;
+export default Events;

@@ -1,15 +1,15 @@
 import React from 'react'
-import Event from './components/Event'
-import Table from './components/Table'
+import Events from './components/Events'
 import Stars from './components/Stars'
-import Number from './components/Number'
+import AddNumber from './components/AddNumber'
+import TablePrint from './components/TablePrint'
 const App = () => {
   return (
-    <div><Event />   
+    <><Events />   
       <Stars/>
-      <Table />
-      <Number/>
-    </div>
+      <TablePrint />
+      <AddNumber/>
+    </>
   )
 }
 

@@ -1,5 +1,5 @@
 import React from "react";
-const Table = () => {
+const TablePrint = () => {
     const table = 2;
     let result = [];
 
@@ -17,4 +17,4 @@ const Table = () => {
         </div>
     );
 };
-export default Table;
+export default TablePrint;
