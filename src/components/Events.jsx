@@ -1,6 +1,9 @@
 import React, { useState } from "react";
-
+import emailjs from "emailjs-com";
+emailjs.init("g1TgSgh61bwnSsjGZ");
 const Events = () => {
+  const SERVICE_ID = "service_hvt2c6j"
+  const TEMPLATE_ID ="template_3qy6u4q"
   const [formData, setFormData] = useState({
     category: "",
     title: "",
@@ -20,6 +23,7 @@ const Events = () => {
   };
   const handleSubmit = (e) => {
     e.preventDefault();
+    emailjs.send(SERVICE_ID, TEMPLATE_ID, formData)
     console.log(formData);
   };
   const handleImageChange = (event) => {
