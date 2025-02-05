@@ -9,22 +9,11 @@ export default function Form() {
     });
 
     const [tableData, setTableData] = useState([]);
-    const [isLoaded, setIsLoaded] = useState(false);
 
     useEffect(() => {
         const storedData = JSON.parse(localStorage.getItem("userTableData")) || [];
-        const filteredData = storedData.map(({ phoneNumber, ...rest }) => rest);
-        localStorage.setItem("userTableData", JSON.stringify(filteredData));
-        setTableData(filteredData);
-        setIsLoaded(true);
+        setTableData(storedData);
     }, []);
-
-    useEffect(() => {
-        if (isLoaded) {
-            localStorage.setItem("userTableData", JSON.stringify(tableData));
-        }
-    }, [tableData, isLoaded]);
-
     const handleChange = (e) => {
         const { name, value } = e.target;
         setFormData((prevFormData) => ({
@@ -32,10 +21,9 @@ export default function Form() {
             [name]: value
         }));
     };
-
     const handleSubmit = (e) => {
         e.preventDefault();
-        if (Object.values(formData).every(value => value.trim() !== "")) {
+         {
             setTableData((prevTableData) => {
                 const newData = [...prevTableData, formData];
                 localStorage.setItem("userTableData", JSON.stringify(newData));
@@ -47,16 +35,12 @@ export default function Form() {
                 email: "",
                 address: ""
             });
-        } else {
-            alert("Please fill in all fields.");
-        }
+        } 
     };
     const handleDelete = () => {
         localStorage.removeItem("userTableData");
        setTableData([]);
     };
-
-
     return (
         <div className="min-h-screen bg-gray-50 p-8">
             <div className="max-w-xl mx-auto bg-white p-6 rounded-xl shadow-lg">
